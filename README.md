@@ -144,7 +144,7 @@ implementa operaciones para crear, editar o eliminar tareas.
 
 ### Verificación del hash de la contraseña
 
-![Captura 7: contraseña almacenada como hash](7_usuarios_con_contraseña_hasheada.PNG)
+![Captura 7: contraseña almacenada como hash](capturas/7_usuarios_con_contraseña_hasheada.PNG)
 
 ## 8. Respuestas conceptuales
 
