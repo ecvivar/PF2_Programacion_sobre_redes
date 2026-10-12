@@ -74,22 +74,13 @@ página de bienvenida o salir del programa.
 
 ## 6. Endpoints de la API
 
-  -----------------------------------------------------------------------
-  Método HTTP             Endpoint                Descripción
-  ----------------------- ----------------------- -----------------------
-  `POST`                  `/registro`             Recibe el nombre de
-                                                  usuario y la
-                                                  contraseña, genera el
-                                                  hash y guarda el
-                                                  usuario en SQLite.
+## 6. Endpoints de la API
 
-  `POST`                  `/login`                Verifica las
-                                                  credenciales con los
-                                                  datos almacenados.
-
-  `GET`                   `/tareas`               Devuelve una página
-                                                  HTML de bienvenida.
-  -----------------------------------------------------------------------
+| Método HTTP | Endpoint | Descripción |
+|---|---|---|
+| `POST` | `/registro` | Recibe el nombre de usuario y la contraseña, genera el hash y guarda el usuario en SQLite. |
+| `POST` | `/login` | Verifica las credenciales con los datos almacenados. |
+| `GET` | `/tareas` | Devuelve una página HTML de bienvenida. |
 
 ### 6.1. Registro de usuario
 
@@ -129,43 +120,29 @@ implementa operaciones para crear, editar o eliminar tareas.
 
 ### Registro exitoso
 
-`capturas/1_registro_usuario.png`
-
 ![Captura 1: Registro de usuario exitoso](capturas/1_registro_usuario.png)
 
 ### Registro usuario duplicado
-
-`capturas/2_registro_usuario_duplicado.png`
 
 ![Captura 2: Registro de usuario duplicado](capturas/2_registro_usuario_duplicado.png)
 
 ### Inicio de sesión exitoso
 
-`capturas/3_inicio_sesion.png`
-
 ![Captura 3: inicio de sesión exitoso](capturas/3_inicio_sesion.png)
 
 ### Inicio de sesión incorrecto
-
-`capturas/4_inicio_sesion_usuario_incorrecto.png`
 
 ![Captura 4: inicio de sesión incorrecto](capturas/4_inicio_sesion_usuario_incorrecto.png)
 
 ### Acceso a la página de bienvenida bloqueado si no esta logueado
 
-`capturas/5_acceso_tareas_sin_session.png`
-
 ![Captura 5: Proteccion de acceso página HTML de bienvenida](capturas/5_acceso_tareas_sin_session.png)
 
 ### Acceso a la página de bienvenida con usuario logueado
 
-`capturas/6_acceso_tareas_con_sesion.png`
-
 ![Captura 6: Acceso página HTML de bienvenida](capturas/6_acceso_tareas_con_sesion.png)
 
 ### Verificación del hash de la contraseña
-
-`capturas/7_usuarios_con_contraseña_hasheada.png`
 
 ![Captura 7: contraseña almacenada como hash](7_usuarios_con_contraseña_hasheada.png)
 
